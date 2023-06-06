@@ -28,6 +28,32 @@ Technologies used in the project:
 *   CUBE ALGORITHM
 *   Machine Learning
 
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Step 1:</p>
+
+```
+Download this repository
+```
+
+<p>2. Step 2:</p>
+
+```
+Extract all the files from the downloaded .ZIP folder
+```
+
+<p>3. Step 3:</p>
+
+```
+Open AI folder and run Index.html
+```
+
+<p>4. Step 4:</p>
+
+```
+Enjoy using AI Rubiks Cube Solver
+```
+
 <h2>🛡️ License:</h2>
 
 This project is licensed under the MIT license
