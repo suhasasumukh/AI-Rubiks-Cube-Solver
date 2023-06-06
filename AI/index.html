@@ -1,0 +1,98 @@
+<html>
+
+<head>
+	<title>AI Rubik's Cube Solver</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<script type="text/javascript" src='rubiks.js'></script>
+	<script type="text/javascript" src='solver.js'></script>
+	<script type="text/javascript" src='flat.js'></script>
+	<style type="text/css">
+		body {
+			background: #fafafa;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="cube" style='position:absolute;left:15px;top:15px;'>HTML5 CANVAS</canvas>
+	<div id='controls'></div>
+	<div id='flat-cube'></div>
+
+	<script type="text/javascript">
+
+		var cube, cube2;
+		var flatCube, controls;
+		var run = function () {
+			cube.tick();
+			cube.render();
+			if (cube2) {
+				cube2.tick();
+				cube2.render();
+			}
+			requestAnimationFrame(run);
+		}
+		var oldWidth = null;
+		var reset = function () {
+			var down = false;
+			var parent = document.getElementById('cube').parentElement;
+			var width = Math.min(parent.offsetWidth / 2 - 30, parent.offsetHeight / 5 * 3);
+			if (width < 250) {
+				width = window.innerWidth / 2 - 30;
+			}
+			if (width < 250) {
+				width = window.innerWidth - 30;
+				down = true;
+			}
+			oldWidth = width;
+			cube = new RubiksCube('cube', width);
+			flatCube = new FlatCube('flat-cube', width, down);
+			controls = new RubiksCubeControls('controls', cube, width);
+
+			cube.flatCube = flatCube;
+			flatCube.cube = cube;
+		};
+
+		var init = function () {
+			reset();
+			run();
+		}
+
+		window.addEventListener('load', function () {
+			init();
+			function loop() {
+				if (cube.rotating) {
+					setTimeout(loop, 3000);
+					return;
+				}
+				scramble(20);
+				solve();
+				loop();
+			}
+		}, false);
+		window.addEventListener('resize', function () {
+			var down = false;
+			var parent = document.getElementById('cube').parentElement;
+			var width = Math.min(parent.offsetWidth / 2 - 30, parent.offsetHeight / 5 * 3);
+			if (width < 250) {
+				width = window.innerWidth / 2 - 30;
+			}
+			if (width < 250) {
+				width = window.innerWidth - 30;
+				down = true;
+			}
+			if (width == oldWidth) {
+				return;
+			}
+			oldWidth = width;
+			cube.updateSize(width);
+			controls.setWidth(width);
+			flatCube = new FlatCube('flat-cube', width, down);
+			cube.flatCube = flatCube;
+			flatCube.cube = cube;
+			cube.update();
+			flatCube.update();
+		});
+	</script>
+
+
+</html>
