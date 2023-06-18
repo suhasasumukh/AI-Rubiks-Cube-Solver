@@ -4,8 +4,6 @@
 
 <p id="description">The AI Rubik's Cube Solver is a groundbreaking tool that harnesses the power of artificial intelligence to conquer the iconic Rubik's Cube puzzle. With its advanced algorithms and Machine learning intelligent decision-making capabilities this solver can tackle even the most challenging cube patterns with ease.</p>
 
-  
-  
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
