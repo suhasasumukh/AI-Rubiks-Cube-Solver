@@ -60,4 +60,4 @@ This project is licensed under the MIT license
 
 <p>From day one with a vision to revolutionize cube-solving I embarked on this thrilling adventure. Through ups and downs I've documented every step decision and breakthrough along the way. #buildinpublic community was the most supportive one! </p>
 <br>
-<p>If you like my work please follow me on <a href="https://twitter.com/suhasasumukh">twitter</a> to get more updates on AI ML and SEO Strategy</p>
+<p>If you like my work please follow me on <a href="https://twitter.com/suhasasumukh">twitter</a> to get more daily insights on AI/ML and Technology</p>
