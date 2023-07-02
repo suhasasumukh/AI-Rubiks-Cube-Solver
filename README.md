@@ -34,13 +34,19 @@ Technologies used in the project:
 git clone https://github.com/suhasasumukh/AI-Rubiks-Cube-Solver
 ```
 
-<p>3. Step 2:</p>
+<p>2. Step 2:</p>
 
 ```
-Open AI folder and run Index.html
+cd ./AI-Rubiks-Cube-Solver
 ```
 
-<p>4. Step 3:</p>
+<p>3. Step 3:</p>
+
+```
+Open AI folder and run index.html
+```
+
+<p>4. Step 4:</p>
 
 ```
 Enjoy using AI Rubiks Cube Solver
