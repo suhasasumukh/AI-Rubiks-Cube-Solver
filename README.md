@@ -31,22 +31,16 @@ Technologies used in the project:
 <p>1. Step 1:</p>
 
 ```
-Download this repository
+git clone https://github.com/suhasasumukh/AI-Rubiks-Cube-Solver
 ```
 
-<p>2. Step 2:</p>
-
-```
-Extract all the files from the downloaded .ZIP folder
-```
-
-<p>3. Step 3:</p>
+<p>3. Step 2:</p>
 
 ```
 Open AI folder and run Index.html
 ```
 
-<p>4. Step 4:</p>
+<p>4. Step 3:</p>
 
 ```
 Enjoy using AI Rubiks Cube Solver
