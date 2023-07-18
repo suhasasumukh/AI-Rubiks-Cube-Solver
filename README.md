@@ -24,7 +24,6 @@ Technologies used in the project:
 *   CSS3
 *   AI ALGORITHM
 *   CUBE ALGORITHM
-*   Machine Learning
 
 <h2>🛠️ Installation Steps:</h2>
 
