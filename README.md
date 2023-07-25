@@ -27,29 +27,34 @@ Technologies used in the project:
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>1. Step 1:</p>
+<h3>🛠️ Directly</h3>
+
+<p>Step 1:</p>
 
 ```
 git clone https://github.com/suhasasumukh/AI-Rubiks-Cube-Solver
 ```
 
-<p>2. Step 2:</p>
+<p>Step 2:</p>
 
 ```
 cd ./AI-Rubiks-Cube-Solver
 ```
 
-<p>3. Step 3:</p>
+<p>Step 3:</p>
 
 ```
 Open AI folder and run index.html
 ```
 
-<p>4. Step 4:</p>
+---------
+<h3> Docker</h3>
 
 ```
-Enjoy using AI Rubiks Cube Solver
+docker compose up -d
 ```
+---------
+### Enjoy using AI Rubiks Cube Solver
 
 <h2>🛡️ License:</h2>
 
