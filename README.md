@@ -21,7 +21,6 @@ Technologies used in the project:
 
 *   JavaScript
 *   HTML5
-*   CSS3
 *   AI ALGORITHM
 *   CUBE ALGORITHM
 
