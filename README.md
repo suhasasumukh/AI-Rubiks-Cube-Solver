@@ -26,7 +26,7 @@ Technologies used in the project:
 
 <h2>🛠️ Installation Steps:</h2>
 
-<h3>🛠️ Directly</h3>
+<h3>🛠️ Intallation guide to run it on your local system.</h3>
 
 <p>Step 1:</p>
 
@@ -47,7 +47,7 @@ Open AI folder and run index.html
 ```
 
 ---------
-<h3> Docker</h3>
+<h3>🐳 Docker</h3>
 
 ```
 docker compose up -d
