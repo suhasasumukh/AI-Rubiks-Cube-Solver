@@ -1,4 +1,3 @@
-
 function hexToRgb(hex) {
 	if (hex.length == 7) {
 		var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -43,10 +42,7 @@ arrayFindIndex = function (arr, f) {
 	return -1;
 };
 var xAutorotate = 0, yAutorotate = 0, zAutorotate = 0;
-// row implied as [0, 0, 0, 1].  This is to avoid generally unneeded work,
-// homogeneous divide.  Unlike points, we use a constructor function instead
-//  e0  e1  e2  e3
-//  e8  e9  e10 e11
+
 function AffineMatrix(e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11) {
 	this.e0 = e0;
 	this.e1 = e1;
@@ -118,11 +114,6 @@ function makeRotateAffineZ(theta) {
 		0, 0, 1, 0
 	);
 }
-//  e4  e5  e6  e7
-//  0   0   0   1
-// d e f * y = (xd + ye + zf) 
-
-// m n o * (xd + ye + zf)
 
 function transformPoint(t, p) {
 	return {
@@ -176,7 +167,6 @@ var Point = function (parent, xyz, project, rubiks) {
 };
 Point.prototype.projection = function () {
 	var p = transformPoint(this.cube.rotationAffine, { x: this.xo, y: this.yo, z: this.zo });
-	// 	p = transformPoint(affine, p);
 	p = transformPoint(this.rubiks.cameraAffine, p);
 	p = transformPoint(this.rubiks.customAffine, p);
 	if (this.rubiks.affinediff) {
